@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
 
 
 </head>
+
 <body>
     <main role="main">
         <section aria-label="Game Section" id="section-game">
@@ -18,7 +20,32 @@
 
             </canvas>
         </section>
+
+
+        <!--    game start modal dialog-->
+        <dialog id="modal-game-start" >
+            <output class="modal-wrapper">
+                <strong class="text-center title">Drive<br>The Game</strong>
+                <div class="text-center">Developed By: <span class="highlight">Ryan Gosling</span></div>
+                <button class="btn" id="btn-play">Start Game</button>
+            </output>
+        </dialog>
+
+        <!--    game end modal dialog-->
+        <dialog id="modal-game-end" >
+            <output class="modal-wrapper">
+                <strong class="text-center">Game End</strong>
+                <div class="text-center">You Score: <span class="highlight" id="score"></span></div>
+                <button class="btn" id="btn-replay">Replay Again</button>
+            </output>
+        </dialog>
+
+
+
     </main>
+
+
     <script src="./app.js"></script>
 </body>
+
 </html>
